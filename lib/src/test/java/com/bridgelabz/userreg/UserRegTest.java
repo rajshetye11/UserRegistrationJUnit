@@ -25,4 +25,11 @@ public class UserRegTest {
 		boolean res = user.email("abc.xyz@bridgelabz.com");
 		Assert.assertEquals(true, res);
 	}
+	
+	@Test
+	public void phone_ValidReturnTrue()throws Exception {
+		UserReg user = new UserReg();
+		boolean res = user.phone("91 9769647887");
+		Assert.assertEquals(true, res);
+	}
 }

@@ -7,7 +7,7 @@ public class UserReg {
 	private final String nameRegex = "^[A-Z][a-z]{3,}";
 	private final String emailRegex = "^[a-z]{3,10}[.+][a-zA-Z]{0,10}[@][a-z]{2,10}(.+)$";
 	private final String phoneRegex = "^[0-9]{2,5}\\s[0-9]{10}";
-	private static final String passwordRegex = "([A-Z]{1,12})([a-z]{1,12})([0-9]{1,12})$";
+	private static final String passwordRegex = "([A-Z]{1,12})([a-z]{1,12})([0-9]{1,12})([!@#$%^&*]{1})$";
 	
 	public boolean firstName(String name) {
 		Pattern pattern = Pattern.compile(nameRegex);

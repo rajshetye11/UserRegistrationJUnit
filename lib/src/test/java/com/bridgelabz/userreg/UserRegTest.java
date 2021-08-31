@@ -36,7 +36,7 @@ public class UserRegTest {
 	@Test
 	public void password_ValidReturnTrue()throws Exception {
 		UserReg user = new UserReg();
-		boolean res = user.password("rajshetye");
+		boolean res = user.password("Rajshetye");
 		Assert.assertEquals(true, res);
 	}
 }

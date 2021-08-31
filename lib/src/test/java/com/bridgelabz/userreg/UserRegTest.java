@@ -4,12 +4,21 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class UserRegTest {
-
+	
+	//FirstName
 	@Test
 	public void firstName_ValidReturnTrue()throws Exception {
 		UserReg user = new UserReg();
 		boolean res = user.firstName("Raaj");
 		Assert.assertEquals(true, res);
+	}
+
+	@Test
+	public void firstName_NotValidReturnFalse() {
+		UserReg user = new UserReg();
+		boolean res = user.firstName("R");
+		Assert.assertEquals(false, res);
+	
 	}
 	
 	@Test

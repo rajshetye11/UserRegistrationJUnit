@@ -10,4 +10,9 @@ public class UserReg {
 		Pattern pattern = Pattern.compile(nameRegex);
 		return pattern.matcher(name).matches();
 	}
+	
+	public boolean lastName(String lastname) {
+		Pattern pattern = Pattern.compile(nameRegex);
+		return pattern.matcher(lastname).matches();
+	}
 }

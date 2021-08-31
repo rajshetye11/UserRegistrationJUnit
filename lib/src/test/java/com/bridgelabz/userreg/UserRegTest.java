@@ -1,6 +1,5 @@
 package com.bridgelabz.userreg;
 
-import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,6 +16,13 @@ public class UserRegTest {
 	public void lastName_ValidReturnTrue()throws Exception {
 		UserReg user = new UserReg();
 		boolean res = user.lastName("Shetye");
+		Assert.assertEquals(true, res);
+	}
+	
+	@Test
+	public void email_ValidReturnTrue()throws Exception {
+		UserReg user = new UserReg();
+		boolean res = user.email("abc.xyz@bridgelabz.com");
 		Assert.assertEquals(true, res);
 	}
 }

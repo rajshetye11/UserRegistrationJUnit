@@ -32,4 +32,11 @@ public class UserRegTest {
 		boolean res = user.phone("91 9769647887");
 		Assert.assertEquals(true, res);
 	}
+	
+	@Test
+	public void password_ValidReturnTrue()throws Exception {
+		UserReg user = new UserReg();
+		boolean res = user.password("rajshetye");
+		Assert.assertEquals(true, res);
+	}
 }

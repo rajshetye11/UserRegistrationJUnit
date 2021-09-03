@@ -34,7 +34,7 @@ public class ValidateEmailTest {
 	}
 	
 	@Test
-	public void testUserRegistrationTest(){
+	public void testUserRegistrationTest()throws UserRegException {
 		Assert.assertEquals(expectedResult,user.email(email));
 	}
 	

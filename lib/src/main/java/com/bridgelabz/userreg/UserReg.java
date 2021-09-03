@@ -2,6 +2,12 @@ package com.bridgelabz.userreg;
 
 import java.util.regex.Pattern;
 
+@FunctionalInterface
+interface IRegistration{
+	boolean validate(String message);
+}
+
+
 public class UserReg {
 	
 	private final String nameRegex = "^[A-Z][a-z]{3,}";
